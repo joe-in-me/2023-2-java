@@ -4,5 +4,11 @@ public class Xnpe {
         System.out.println(str);
         // npe 안터짐
         // 메소드나 필드를 '사용' 해야 터짐.
+
+
+        Tmp tmp = new Tmp();
+        System.out.println(tmp.fe);
+        // npe 안터짐
+        // 메소드나 필드를 '사용' 해야 터짐.
     }
 }
