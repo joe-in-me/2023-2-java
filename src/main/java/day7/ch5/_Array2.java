@@ -9,7 +9,7 @@ public class _Array2 {
             System.out.println("arr1[" + i + "] = " + arr1[i]);
         }
 
-        arr1 = arr2; // 얕은 복사
+        arr1 = arr2; // 얕은 복사 ( shallow copy )
         System.out.println("------");
         for (int i = 0; i < arr1.length; i++) {
             System.out.println("arr1[" + i + "] = " + arr1[i]);

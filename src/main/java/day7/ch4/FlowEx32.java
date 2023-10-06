@@ -22,9 +22,14 @@ public class FlowEx32 {
         int input;
 
         while (true) {
-            System.out.println("(1) square");
-            System.out.println("(2) tri");
-            System.out.println("(3) log");
+            System.out.println("""
+                    (1) square
+                    (2) tri
+                    (3) log
+                    """);
+//            System.out.println("(1) square");
+//            System.out.println("(2) tri");
+//            System.out.println("(3) log");
             System.out.print("원하는 메뉴 (1 ~ 3) 을 선택하세요. (종료: 0) >> ");
             input = Integer.parseInt(new Scanner(System.in).nextLine());
 

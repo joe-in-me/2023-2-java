@@ -8,6 +8,8 @@ public class _Array {
         System.out.println("arr[0] = " + arr[0]);
         System.out.println("arr[1] = " + arr[1]);
         System.out.println("arr[2] = " + arr[2]);
+
+
         
         arr[0] = 200;
         System.out.println("arr.length = " + arr.length);

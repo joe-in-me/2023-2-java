@@ -2,7 +2,7 @@ package day7.ch5;
 
 public class _Array3 {
     public static void main(String[] args) {
-        // deep copy
+        // 깊은 복사 ( deep copy )
 
         int[] arr1 = {5, 10, 15};
         int[] arr2 = new int[arr1.length];

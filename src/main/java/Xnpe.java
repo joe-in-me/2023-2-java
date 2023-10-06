@@ -6,8 +6,8 @@ public class Xnpe {
         // 메소드나 필드를 '사용' 해야 터짐.
 
 
-        Tmp tmp = new Tmp();
-        System.out.println(tmp.fe);
+        FieldOfXnpe fieldOfXnpe = new FieldOfXnpe();
+        System.out.println(fieldOfXnpe.fe);
         // npe 안터짐
         // 메소드나 필드를 '사용' 해야 터짐.
     }
