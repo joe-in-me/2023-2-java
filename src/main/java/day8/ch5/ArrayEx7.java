@@ -13,7 +13,6 @@ public class ArrayEx7 {
         }
 
         //2. 셔플하기
-        //
 
         int index;
         int tmp;
