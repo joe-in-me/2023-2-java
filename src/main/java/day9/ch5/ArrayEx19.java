@@ -44,7 +44,7 @@ public class ArrayEx19 {
 
 
         System.out.println("번호\t\t국어\t\t영어\t\t수학\t\t총점\t\t평균");
-        System.out.println("--------------------------------------------------------");
+        System.out.println("----------------------------------------------");
         for (int i = 0; i < score.length; i++) {
             System.out.print(i + 1 + "\t\t");
             for (int j = 0; j < score[i].length; j++) {
@@ -58,7 +58,7 @@ public class ArrayEx19 {
             sum = 0;
         }
 
-        System.out.println("--------------------------------------------------------");
+        System.out.println("----------------------------------------------");
         System.out.println("총점\t\t" + korSum + "\t\t" + engSum + "\t\t" + mathSum);
 
 
