@@ -83,7 +83,7 @@ public class ArrayEx19 {
             int sum2 = 0;
             for(int z = 0; z < score2[i].length; z++) {
                 int val = score2[i][z];
-                sumArr[z] += val;                                               // !!! // !!! // !!!
+                sumArr[z] += val;                // !!! // !!! // !!!
                 sum2 += val;
                 System.out.printf("\t%d", val);
             }

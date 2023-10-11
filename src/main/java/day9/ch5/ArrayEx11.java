@@ -9,11 +9,11 @@ public class ArrayEx11 {
         int[] cntArr = new int[LEN];
 
         /*
-        * numarr 각 방에 0~9 사이의 랜덤값을 대입. (중복 허용)
-        * numArr 각방의 값도 출력
-        * cntArr의 0번 방은 0의 갯수, 1번방은 1의 개수 count값을 넣는다.
-        * 0~9 의 개수를 출력
-        * */
+         * numarr 각 방에 0~9 사이의 랜덤값을 대입. (중복 허용)
+         * numArr 각방의 값도 출력
+         * cntArr의 0번 방은 0의 갯수, 1번방은 1의 개수 count값을 넣는다.
+         * 0~9 의 개수를 출력
+         * */
 
 
         for (int i = 0; i < LEN; i++) {
@@ -43,10 +43,13 @@ public class ArrayEx11 {
         for (int i = 0; i < cnt2.length; i++) {
             cnt2[numArr[i]]++;
         }
+
         System.out.println(Arrays.toString(cnt2));
+
+        for (int num : numArr) {
+            cnt2[num]++;
+        }
 
 
     }
-
-
 }
