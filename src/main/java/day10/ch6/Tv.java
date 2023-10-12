@@ -26,5 +26,5 @@ public class Tv  {
     void channelDown() {
         channel--;
     }
-
+    // this 는 상수
 }
