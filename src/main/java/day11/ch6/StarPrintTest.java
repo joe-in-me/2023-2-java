@@ -2,6 +2,7 @@ package day11.ch6;
 
 public class StarPrintTest {
     public static void main(String[] args) {
+
         StarPrint starPrint = new StarPrint();
         starPrint.line(5); // ***** + 개행
         starPrint.line(7); // ******* + 개행
@@ -34,12 +35,13 @@ public class StarPrintTest {
         System.out.println();
         String gender = starPrint.chkGenderById("011231-5117111");
         System.out.println("gender = " + gender);
+
         /*
-        * 8번째 자리의 숫자가
-        * 2, 4 이면 > 여성
-        * 1, 3 이면 > 남성
-        * 이 외의 값이면 > 유효하지 않은 주민번호
-        * */
+         * 8번째 자리의 숫자가
+         * 2, 4 이면 > 여성
+         * 1, 3 이면 > 남성
+         * 이 외의 값이면 > 유효하지 않은 주민번호
+         * */
 
         System.out.println();
         System.out.println();
