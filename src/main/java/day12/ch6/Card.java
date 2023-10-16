@@ -1,8 +1,8 @@
 package day12.ch6;
 
 public class Card {
-    String kind;
-    String number;
+    public String kind;
+    public String number;
 
     public int getScore() {
         if (this.number.equals("A")) {
@@ -15,7 +15,6 @@ public class Card {
             return 13;
         }
         return Integer.parseInt(this.number);
-
     }
 
     public int getScore(boolean v2) {
@@ -30,7 +29,9 @@ public class Card {
                 return 13;
         }
         return Integer.parseInt(number);
+    }
 
-
+    public void printYourSelf() {
+        System.out.printf("%s (%s)\n", this.kind, this.number);
     }
 }
