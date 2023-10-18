@@ -17,11 +17,7 @@ public class Car {
     public Car(String color) {
 //        this();
 //        this.color = color;
-        this(color, "auto", 4);
-    }
-
-    public Car(int door) {
-        this("white", "auto", door);
+        this(color, "auto", 5);
     }
 
     public Car(String color, String gearType, int door) {
@@ -39,11 +35,17 @@ public class Car {
 class CarTest {
     public static void main(String[] args) {
         Car car1 = new Car();
-        Car car2 = new Car("blue");
+        Car car2 = new Car("black");
+        car1.printMySelf();
 
         car1.printMySelf(); // color=while, gearType=auto, door=4
         car2.printMySelf(); // color=blue, gearType=auto, door=4
 
+
+
+
     }
+
+
 }
 

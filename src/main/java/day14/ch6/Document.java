@@ -7,7 +7,10 @@ public class Document {
     public Document() {
         this("제목없음" + ++count);
     }
-
+        // super() 호출 이후에 초기화 블럭이 사용됨
+        // 생성자 -> 생성자 호출 (생성자에서 this() 호출) 시 호출을 '한' 생성자에서는 super() 가 생략되고,
+        // 호출을 '받은' 생성자에서 가장 위에 super() 가 자동 생성됨( 컴파일시 )
+        // super() 는 모든 생성자의 가장 첫줄에 기본적으로는 super() 가 자동 생성됨 ( 컴파일시 )
     public  Document(String txt) {
 //        this.text = txt;
         System.out.printf("문서 %s 가 생성되었습니다.\n", txt);
