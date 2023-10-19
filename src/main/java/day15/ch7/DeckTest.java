@@ -1,6 +1,9 @@
 package day15.ch7;
 
 public class DeckTest {
+
+
+
     public static void main(String[] args) {
         Deck deck = new Deck();
 
@@ -10,6 +13,12 @@ public class DeckTest {
 
         Card pick = deck.pick();
         System.out.println("pick = " + pick);
+
+
+        System.out.println("-----");
+        System.out.println("-----");
+
+        deck.shuffle(); // 섞기
 
     }
 }
@@ -28,6 +37,7 @@ class Card {
 
     public Card() {
         this(Card.KIND_MAX, 1);
+
     }
 
     public Card(int kind, int number) {
@@ -55,18 +65,43 @@ class Deck {
 //        this.check();
     }
 
-    public void check() {
-        for (Card card : this.cardArr) {
-            System.out.println(card);
-        }
-    }
-
     public Card pick(int i) {
         return this.cardArr[i];
     }
 
     public Card pick() {
 //        return this.pick((int) (Math.random() * this.cardArr.length));
-        return this.pick((int) (Math.random() * this.CARD_NUM));
+        return this.pick(getRandomNum(this.CARD_NUM));
     }
+
+    public void shuffle() {
+        Card tmp;
+        for (int i = 0; i < this.cardArr.length; i++) {
+            int rNum = getRandomNum(this.cardArr.length);
+            if (rNum == i) continue;
+
+            tmp = cardArr[i];
+            cardArr[i] = cardArr[rNum];
+            cardArr[rNum] = tmp;
+        }
+        this.check();
+    }
+
+
+    // UTIL
+    private int getRandomNum(int max) {
+        return (int) (Math.random() * max);
+    }
+
+    private int getRandomNum(int min, int max) {
+        return (int) (Math.random() * (max - min + 1) + min);
+    }
+
+    public void check() {
+        for (Card card : this.cardArr) {
+            System.out.println(card);
+        }
+    }
+
+
 }

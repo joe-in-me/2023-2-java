@@ -1,6 +1,7 @@
 package day15.ch7;
 
-public class CaptionTvTest {
+public  class CaptionTvTest {
+
     public static void main(String[] args) {
         CaptionTv captionTv = new CaptionTv();
         System.out.printf("captionTv.power: %b\n", captionTv.power);
