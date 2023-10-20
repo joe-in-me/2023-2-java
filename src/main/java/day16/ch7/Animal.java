@@ -84,9 +84,12 @@ class AnimalTest2 {
 
     }
 
+
     private static void callCrying(Animal animal) {
+
         if (animal instanceof Bulldog) ((Bulldog) animal).jump();
         animal.crying();
+
     }
 
     private static void callCrying(Animal animal, boolean v2) {
@@ -106,5 +109,16 @@ class AnimalTest3 {
 
         System.out.println("------------");
 
+
     }
 }
+
+/*
+ *
+ * 상속관계에서 다른 타입의 객체를 담을 수 있는것.
+ * 특징으로는
+ * 1. 부모타입은 자식 타입 담기 o
+ * 2. 자식타입은 부모 타입 담기 x
+ * 3. 기능은 타입, 실행은 객체자체 의 멤버를 사용할 수있고,실행할 수 있음.
+ *
+ * */
