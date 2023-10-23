@@ -116,6 +116,7 @@ class Buyer2 {
             for (int j = 0; j < productsName.length; j++) {
                 if (this.products[i].getName().equalsIgnoreCase(productsName[j])) {
                     ++this.productCnt[j];
+                    break;
                 }
             }
         }
