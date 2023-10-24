@@ -1,0 +1,29 @@
+* ArrayList & LinkedList *
+ArrayList -> select 속도 이점.
+LinkedList -> insert 속도 이점.
+
+자신의 클래스 내부에 추상 메소드가 하나라도 있으면 클래스도 추상클래스어야 한다!
+
+
+* abstract class *
+나 자신도 abstract 가 되면, 구현의 의무를 잃는다.
+interface 의 interface 를 extends 한것같은 개념.
+abstract class DvdPlayer extends Player {
+}
+
+* interface *
+인터페이스의 기본 제어자 :
+fields : public static final
+methods : public abstract
+
+* 용어 *
+단독 실행 프로그램 -> stand alone 이라고 함.
+
+* try - catch - finally *
+finally 는 일반적인 경우에는 관계가 없지만,
+외부 메소드에서 return 을 만났을때 차이점이 있다.
+만약, 외부 메소드에서 return 을 만나면,
+finally 의 '문장' 을 모두 수행하고 return 한다.
+즉, 이런점 때문에,
+finally 는 항상 실행됨이 보장이 된다.
+고 하는 것이다.
