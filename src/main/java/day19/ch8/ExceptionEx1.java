@@ -2,6 +2,7 @@ package day19.ch8;
 
 public class ExceptionEx1 {
     public static void main(String[] args) {
+
         int num = 0;
 //        num = num / 0;
 
@@ -50,6 +51,7 @@ class ExceptionEx1_2 {
 
 class ExceptionEx1_3 {
     public static void main(String[] args) {
+
         try {
 //            int num = 10 / 0;
 

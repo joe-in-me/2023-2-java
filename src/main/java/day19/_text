@@ -27,3 +27,7 @@ finally 의 '문장' 을 모두 수행하고 return 한다.
 즉, 이런점 때문에,
 finally 는 항상 실행됨이 보장이 된다.
 고 하는 것이다.
+
+
+* root directory 에 있는 class 파일은 import 자체가 안된다. *
+따라서, 객체 생성도 안된다.

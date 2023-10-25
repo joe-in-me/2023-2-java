@@ -19,6 +19,7 @@ interface Attackable {
  * Fighterble
  */
 public interface Fighterble extends Movable, Attackable {
+
 }
 
 /**
